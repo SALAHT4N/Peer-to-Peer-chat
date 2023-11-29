@@ -64,7 +64,7 @@ public class MessageUI extends VBox {
         this.message = message;
         this.setSpacing(10);
         this.setPadding(new Insets(5, 10, 10, 10));
-        String color = !message.isDirection() ? "none" : "#AFA79F";
+        String color = !message.isDirection() ? "#eb5144" : "#59a800";
         this.setStyle("-fx-background-color: "+ color +"; -fx-border-radius: 10;");
 
         Button btn = ((ClientController)ChatApplication.fxmlLoader.getController()).getBtnDelete();
